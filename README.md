@@ -43,28 +43,6 @@ Developing this application provides practical experience with:
 - Managing application configuration and dependencies.
 - Using Git for version control and documenting development work.
 
-## Project Structure
-
-A typical Django project structure may look like this:
-
-```text
-project101/
-├── manage.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-├── project101/
-│   ├── settings.py
-│   ├── urls.py
-│   └── ...
-└── blog/
-    ├── models.py
-    ├── views.py
-    ├── urls.py
-    ├── admin.py
-    └── ...
-```
-
 ## Current Development Status
 
 This project is part of my ongoing development journey in Python and backend software engineering. It provides a practical environment for learning Django's core concepts, implementing web application functionality, and improving my understanding of database-driven applications.
