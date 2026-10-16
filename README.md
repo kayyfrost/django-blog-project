@@ -68,5 +68,5 @@ Developed as a personal project to strengthen Python programming, Django develop
 
 ## License
 
-Refer to the repository's selected license for the terms under which this project may be used or distributed.
+MIT license
 
