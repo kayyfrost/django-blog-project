@@ -9,7 +9,7 @@ The application is designed to provide a foundation for publishing and managing 
 
 ## Project Objectives
 
-The primary objective of this project is to strengthen practical backend development skills by building a functional web application from the ground up. It provides hands-on experience with Django's architecture, the Model-View-Template (MVT) pattern, database models, URL configuration, and the processing of HTTP requests and responses.
+The primary objective of this project is to strengthen practical backend development skills by building a functional web application from the ground up. It provides hands-on experience with Django's architecture, database models, URL configuration, and the processing of HTTP requests and responses.
 
 The project also emphasizes writing organized, maintainable code and understanding the relationship between the application's data layer, business logic, and presentation layer.
 
@@ -18,7 +18,7 @@ The project also emphasizes writing organized, maintainable code and understandi
 - **Python** — Core programming language.
 - **Django** — Web framework used to build the application.
 - **HTML and CSS** — Frontend structure and styling, where implemented.
-- **SQLite** — Database used for development, if configured as the project's database.
+- **SQLite** — Database used for development.
 - **Git and GitHub** — Version control and project hosting.
 
 ## Application Architecture
