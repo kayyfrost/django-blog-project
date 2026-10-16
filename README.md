@@ -1,4 +1,3 @@
-# django-blog-project
 # Django Blog Application
 
 ## Overview
@@ -49,12 +48,12 @@ Developing this application provides practical experience with:
 A typical Django project structure may look like this:
 
 ```text
-django-blog/
+project101/
 ├── manage.py
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
-├── config/
+├── project101/
 │   ├── settings.py
 │   ├── urls.py
 │   └── ...
