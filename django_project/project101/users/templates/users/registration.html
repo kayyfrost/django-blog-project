@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Account Creation
+{% endblock title %}
+
+{% block header %}
+    <h1>New Account</h1>
+{% endblock header %}
+
+{% block main %}
+    <section class='registrationFormContainer'>
+        <form action="{% url "users:registration" %}" method='post' class='registrationForm'>
+            {% csrf_token %}
+            {{ form }}
+            <button>Submit</button>
+        </form>
+    </section>
+{% endblock main %}

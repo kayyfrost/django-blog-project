@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Django App
+        {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'imgs/4.jpg' %}" type='image/x-icon'>
+</head>
+<body>
+    <div class="outer-container">
+        <header>
+            {% block header %}{% endblock header %}
+            <nav class="primary-nav">
+                <a href="{% url "home" %}" title='Home'>🏠</a> | 
+                <a href="{% url "posts:list" %}" title='Posts'>📜</a> |
+                <a href="{% url "about" %}" title='About'>😁</a> |
+                {% if user.is_authenticated %}
+                    <a href="{% url "posts:newPost" %}" title='New Post'>➕</a> |
+                    <form action="{% url "users:logout" %}" method='post' class='logoutForm'>
+                        {% csrf_token %}
+                        <button title='logout'>👋🏾</button>
+                    </form>
+                {% else %}
+                    <a href="{% url "users:registration" %}" title='Create an Account'>🚀</a> |
+                    <a href="{% url "users:login" %}" title='Login'>🔓</a>
+                {% endif %}
+            </nav>
+        </header>
+        <main>
+            {% block main %}{% endblock main %}
+        </main>
+        <footer>
+            {% block footer %}
+                <p>&copy;Frost2026</p>
+            {% endblock footer %}
+        </footer>
+        <script src='{% static 'js/index.js' %}' defer></script>
+    </div>
+</body>
+</html>

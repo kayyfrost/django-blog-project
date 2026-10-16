@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock title %}
+
+{% block header %}
+    <h1>{{ post.title }}</h1>
+{% endblock header %}
+
+{% block main %}
+    <section class='post'>
+        <figure class='bannerContainer'>
+            <img src="{{ post.banner.url }}" alt="{{ post.title }}" class='banner'>
+        </figure>
+        <p class='date'>{{ post.date }}</p>
+        <p class='body'>{{ post.body }}</p>
+    </section>
+{% endblock main %}

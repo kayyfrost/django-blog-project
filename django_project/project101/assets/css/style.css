@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --H1-BG-COLOR : rgba(0, 255, 255, 0.56);
+    --CONTAINER-BG-COLOR : rgba(0, 0, 0, 0.668);
+}
+
+img {
+    display: block;
+}
+
+html {
+    font-family: 'Franklin Gothic';
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+caption, textarea, input, button, select {
+    font: inherit;
+}
+
+body {
+    background-image: url('../imgs/image7.jpg');
+    color: whitesmoke;
+    font-size: 2rem;
+    min-height: 100vh;
+}
+
+.outer-container {
+    background-color: var(--CONTAINER-BG-COLOR);
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    background-color: var(--H1-BG-COLOR);
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    width: 97%;
+    margin: 2px auto;
+}
+
+.primary-nav {
+    background-color: rgba(0, 0, 0, 0.572);
+    border: 2px solid;
+    border-color: transparent #333 ;
+    text-align: center;
+    width: 95%;
+    margin: 2px auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--H1-BG-COLOR);
+}
+
+a:hover {
+    color: aqua;
+}
+
+.posts {
+    text-align: center;
+    width: 97%;
+    margin: 5px auto;
+    border: 2px solid;
+    border-color: transparent #333;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+
+.posts h2 {
+    color: var(--H1-BG-COLOR);
+}
+
+.post {
+    background-color: rgba(0, 0, 0, 0.637);
+    min-height: 80vh;
+    width: 98%;
+    border: 2px solid;
+    border-color: transparent black;
+    margin: 2px auto;
+}
+
+.post .date {
+    text-align: center;
+    color: var(--H1-BG-COLOR);
+}
+
+.post .body {
+    margin: 1rem;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.637);
+    width: 97%;
+    margin: 0 auto;
+    text-align: center;
+    color: gray;
+}
+
+.main {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.637);
+    width: 97%;
+    margin: 0 auto;
+}
+
+.list {
+    min-height: 100vh;
+}
+
+.banner {
+    margin: 2px auto;
+}
+
+.bannerContainer {
+    overflow: hidden;
+    max-height: 60vh;
+}
+
+.helptext {
+    display: none;
+}
+
+.registrationFormContainer {
+    min-height: 80vh;
+    width: 97%;
+    margin: 2px auto;
+}
+
+.registrationForm {
+    min-height: 40vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.registrationForm label {
+    background-color: var(--H1-BG-COLOR);
+    color: black;
+    padding: 0.5rem;
+}
+
+.registrationForm button {
+    width: 150px;
+}
+
+.logoutForm {
+    display: inline-block;
+}
+
+.logoutForm button {
+    background-color: transparent;
+    border: none;
+    opacity: 60%;
+}
+
+.logoutForm button:hover {
+    opacity: 100%;
+}
